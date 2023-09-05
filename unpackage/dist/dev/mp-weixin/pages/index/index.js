@@ -3,13 +3,10 @@ const common_vendor = require("../../common/vendor.js");
 const _sfc_main = {
   __name: "index",
   setup(__props) {
-    const text = "q12121";
     return (_ctx, _cache) => {
-      return {
-        a: common_vendor.t(text)
-      };
+      return {};
     };
   }
 };
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/uni-app/uniapp-wx-vue3/pages/index/index.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "E:/myProject/uniapp-wx-vue3/pages/index/index.vue"]]);
 wx.createPage(MiniProgramPage);

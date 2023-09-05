@@ -1,6 +1,10 @@
 <template>
 	<view class="container">
-		<view class="intro">{{text}}</view>
+		<view class="intro">
+			&1（用来判断num奇偶）偶0奇1
+			(5+2)/2得到3.5 
+			(5+2)>>1得到3  它与Math.floor((5 + 2)/2)大致相同，但完全避免了浮点数。
+		</view>
 	</view>
 </template>
 
