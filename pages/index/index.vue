@@ -1,20 +1,11 @@
 <template>
 	<view class="container">
-		<view class="intro">我的随手记</view>
+		<view class="intro">{{text}}</view>
 	</view>
 </template>
 
-<script>
-	export default {
-		data() {
-			return {
-				href: 'https://uniapp.dcloud.io/component/README?id=uniui'
-			}
-		},
-		methods: {
-
-		}
-	}
+<script setup>
+const text='q12121'
 </script>
 
 <style>
