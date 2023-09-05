@@ -1,1 +1,1 @@
-<view> 个人管理 </view>
+<view class="myInfo"><block wx:for="{{a}}" wx:for-item="title" wx:key="c"><view class="title">{{title.a}}:</view><view>{{title.b}}</view></block></view>
