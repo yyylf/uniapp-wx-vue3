@@ -1,6 +1,11 @@
-
-.container {
-		padding: 20px;
-		font-size: 14px;
-		line-height: 24px;
+.basicInfo .directory {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 48rpx;
+  margin: 4rpx 0;
+}
+.basicInfo .title {
+  padding: 1rem 2rem;
+  margin: 2rpx 0;
+  background-image: linear-gradient(to right, #00c6fb 0%, #005bea 100%);
 }

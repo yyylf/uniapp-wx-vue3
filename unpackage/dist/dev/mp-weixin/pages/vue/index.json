@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Vue合集",
+  "usingComponents": {
+    "basic": "../index/basic"
+  }
+}

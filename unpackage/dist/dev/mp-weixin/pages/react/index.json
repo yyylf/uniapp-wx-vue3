@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "React合集",
+  "usingComponents": {
+    "basic": "../index/basic"
+  }
+}

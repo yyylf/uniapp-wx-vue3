@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "前端工程化",
+  "usingComponents": {
+    "basic": "./basic"
+  }
+}

@@ -3,6 +3,14 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const common_vendor = require("./common/vendor.js");
 if (!Math) {
   "./pages/index/index.js";
+  "./pages/index/browser.js";
+  "./pages/index/css.js";
+  "./pages/index/html.js";
+  "./pages/index/js.js";
+  "./pages/index/optimize.js";
+  "./pages/index/automate.js";
+  "./pages/vue/index.js";
+  "./pages/react/index.js";
   "./pages/my/index.js";
 }
 const _sfc_main = {
@@ -17,7 +25,7 @@ const _sfc_main = {
     console.log("App Hide");
   }
 };
-const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "E:/myProject/uniapp-wx-vue3/App.vue"]]);
+const App = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/uni-app/uniapp-wx-vue3/App.vue"]]);
 function createApp() {
   const app = common_vendor.createSSRApp(App);
   return {

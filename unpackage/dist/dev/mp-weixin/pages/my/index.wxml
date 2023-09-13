@@ -1,1 +1,1 @@
-<view class="myInfo"><block wx:for="{{a}}" wx:for-item="title" wx:key="c"><view class="title">{{title.a}}:</view><view>{{title.b}}</view></block></view>
+<view class="myInfo"><view class="title">头像:</view><image src="/static/avatar.png" class="avatar"></image><block wx:for="{{a}}" wx:for-item="title" wx:key="c"><view class="title">{{title.a}}:</view><view class="text">{{title.b}}</view></block></view>

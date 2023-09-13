@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "js相关",
+  "usingComponents": {
+    "basic": "./basic"
+  }
+}

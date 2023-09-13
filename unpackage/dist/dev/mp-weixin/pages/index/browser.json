@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "浏览器相关",
+  "usingComponents": {
+    "basic": "./basic"
+  }
+}

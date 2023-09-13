@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "性能优化",
+  "usingComponents": {
+    "basic": "./basic"
+  }
+}

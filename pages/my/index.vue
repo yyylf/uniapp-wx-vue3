@@ -1,8 +1,10 @@
 <template>
 	<view class="myInfo">
+		<view class="title">头像:</view>
+		<image src="../../static/avatar.png" class="avatar"></image>
 		<template v-for='title in titleList' :key='title'>
 		<view class="title">{{ title }}:</view>
-		<view>{{ myInfo[title] }}</view>
+		<view class="text">{{ myInfo[title] }}</view>
 		</template>
 	</view>
 </template>
@@ -10,10 +12,12 @@
 <script setup lang='ts'>
 import {reactive} from 'vue';
 type NameRecord = Record<string,any>
-const titleList = reactive<string[]>(['姓名','出生日期'])
+const titleList = reactive<string[]>(['作者','QQ','出生日期','入党日期'])
 const myInfo = reactive<NameRecord>({
-	姓名:'于佑尧',
-	出生日期:'1995-04-28',
+		作者:'于佑尧',
+		QQ:'2428072732',
+		出生日期:'1995-04-28',
+		入党日期:'2016-05-25',
 	})
 </script>
 
@@ -21,11 +25,16 @@ const myInfo = reactive<NameRecord>({
 .myInfo{
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
-	column-gap: 60rpx;
-	row-gap: 10rpx;
+	align-items: center;
+	column-gap: 2rem;
+	row-gap: 2rem;
 	.title{
 		justify-self: flex-end;
 		font-weight: bolder;
+	}
+	.avatar{
+		width: 3rem;
+		height: 3rem;
 	}
 }
 </style>

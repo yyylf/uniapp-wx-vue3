@@ -2,7 +2,55 @@
 	"pages": [{
 			"path": "pages/index/index", //名字叫不叫index无所谓，位置在第一个，就是首页
 			"style": {
-				"navigationBarTitleText": "首页" //页面标题
+				"navigationBarTitleText": "前端基础集合" //页面标题
+			}
+		},
+		{
+			"path": "pages/index/browser",
+			"style": {
+				"navigationBarTitleText": "浏览器相关"
+			}
+		},
+		{
+			"path": "pages/index/css",
+			"style": {
+				"navigationBarTitleText": "css相关"
+			}
+		},
+		{
+			"path": "pages/index/html",
+			"style": {
+				"navigationBarTitleText": "html相关"
+			}
+		},
+		{
+			"path": "pages/index/js",
+			"style": {
+				"navigationBarTitleText": "js相关"
+			}
+		},
+		{
+			"path": "pages/index/optimize",
+			"style": {
+				"navigationBarTitleText": "性能优化"
+			}
+		},
+		{
+			"path": "pages/index/automate",
+			"style": {
+				"navigationBarTitleText": "前端工程化"
+			}
+		},
+		{
+			"path": "pages/vue/index",
+			"style": {
+				"navigationBarTitleText": "Vue合集"
+			}
+		},
+		{
+			"path": "pages/react/index",
+			"style": {
+				"navigationBarTitleText": "React合集"
 			}
 		},
 		{
@@ -10,8 +58,8 @@
 			"style": {
 				"navigationBarTitleText": "我的"
 			}
-		}    
-    ],
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "配置底部导航栏",
@@ -23,20 +71,32 @@
 	},
 	"tabBar": {
 		"borderStyle": "black",
-		"selectedColor": "#fb7299",
+		"selectedColor": "#21cded",
 		"color": "#444444",
-		"list": [
-			{
+		"spacing": "",
+		"list": [{
 				"pagePath": "pages/index/index",
-				"iconPath": "static/c1.png",
-				"selectedIconPath": "static/c9.png",
-				"text":"笔记"
+				"iconPath": "static/礼物.png",
+				"selectedIconPath": "static/礼物.png", // 选中时图标
+				"text": "合集"
+			},
+			{
+				"pagePath": "pages/vue/index",
+				"iconPath": "static/Vue.png",
+				"selectedIconPath": "static/Vue.png",
+				"text": "Vue专项"
+			},
+			{
+				"pagePath": "pages/react/index",
+				"iconPath": "static/React.png",
+				"selectedIconPath": "static/React.png",
+				"text": "React专项"
 			},
 			{
 				"pagePath": "pages/my/index",
-				"iconPath": "static/c2.png",
-				"selectedIconPath": "static/c8.png",
-				"text":"我的"
+				"iconPath": "static/会员.png",
+				"selectedIconPath": "static/会员.png",
+				"text": "我的"
 			}
 		]
 	}

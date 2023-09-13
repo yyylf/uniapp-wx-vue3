@@ -1,10 +1,15 @@
 .myInfo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 60rpx;
-  row-gap: 10rpx;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 2rem;
 }
 .myInfo .title {
   justify-self: flex-end;
   font-weight: bolder;
+}
+.myInfo .avatar {
+  width: 3rem;
+  height: 3rem;
 }

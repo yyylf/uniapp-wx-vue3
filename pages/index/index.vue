@@ -1,21 +1,58 @@
 <template>
-	<view class="container">
-		<view class="intro">
-			&1（用来判断num奇偶）偶0奇1
-			(5+2)/2得到3.5 
-			(5+2)>>1得到3  它与Math.floor((5 + 2)/2)大致相同，但完全避免了浮点数。
+	<view class="basicInfo">
+		<view class="directory">目录</view>
+		<view v-for="title in typeList" :key="title.id" class="title" @click="toDetail(title.id)">
+			{{ title.name }}
 		</view>
 	</view>
 </template>
 
-<script setup>
-const text='q12121'
+<script setup lang="ts">
+const typeList = [
+	{
+		id: 'browser',
+		name: '浏览器'
+	},
+	{
+		id: 'css',
+		name: 'CSS'
+	},
+	{
+		id: 'html',
+		name: 'HTML'
+	},
+	{
+		id: 'js',
+		name: 'JS'
+	},
+	{
+		id: 'optimize',
+		name: '性能优化'
+	},
+	{
+		id: 'automate',
+		name: '前端工程化'
+	}
+];
+const toDetail = (title: string) => {
+	uni.navigateTo({
+		url: `./${title}`
+	});
+};
 </script>
 
-<style>
-	.container {
-		padding: 20px;
-		font-size: 14px;
-		line-height: 24px;
+<style lang="less">
+.basicInfo {
+	.directory {
+		text-align: center;
+		font-weight: bolder;
+		font-size: 48rpx;
+		margin: 4rpx 0;
 	}
+	.title {
+		padding: 1rem 2rem;
+		margin: 2rpx 0;
+		background-image: linear-gradient(to right, #00c6fb 0%, #005bea 100%);
+	}
+}
 </style>

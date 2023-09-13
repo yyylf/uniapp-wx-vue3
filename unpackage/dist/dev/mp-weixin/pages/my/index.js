@@ -3,10 +3,12 @@ const common_vendor = require("../../common/vendor.js");
 const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
   __name: "index",
   setup(__props) {
-    const titleList = common_vendor.reactive(["姓名", "出生日期"]);
+    const titleList = common_vendor.reactive(["作者", "QQ", "出生日期", "入党日期"]);
     const myInfo = common_vendor.reactive({
-      姓名: "于佑尧",
-      出生日期: "1995-04-28"
+      作者: "于佑尧",
+      QQ: "2428072732",
+      出生日期: "1995-04-28",
+      入党日期: "2016-05-25"
     });
     return (_ctx, _cache) => {
       return {
@@ -21,5 +23,5 @@ const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
     };
   }
 });
-const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "E:/myProject/uniapp-wx-vue3/pages/my/index.vue"]]);
+const MiniProgramPage = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/uni-app/uniapp-wx-vue3/pages/my/index.vue"]]);
 wx.createPage(MiniProgramPage);
